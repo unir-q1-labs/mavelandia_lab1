@@ -23,7 +23,7 @@
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_154B6636-E591-425C-89A4-FC09E42DE6CF" name="Date" isCollection="false">
-      <dmn:typeRef>string</dmn:typeRef>
+      <dmn:typeRef>date</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_41F856E3-4B96-4755-A15A-10233D37AB8E" name="Type" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
