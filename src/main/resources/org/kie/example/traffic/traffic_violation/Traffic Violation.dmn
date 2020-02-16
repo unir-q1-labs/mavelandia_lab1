@@ -60,7 +60,7 @@
   </dmn:decision>
   <dmn:inputData id="_B56C8227-43B1-426A-ACE7-0C1050D2D8CE" name="Violation">
     <dmn:extensionElements/>
-    <dmn:variable id="_5C35AB1E-54A3-4B66-9C30-FC47E8EDEA0C" name="Violation"/>
+    <dmn:variable id="_5C35AB1E-54A3-4B66-9C30-FC47E8EDEA0C" name="Violation" typeRef="tViolation"/>
   </dmn:inputData>
   <dmn:inputData id="_623EEF78-A58F-4FB5-AC98-6C63C9C22EC5" name="Driver">
     <dmn:extensionElements/>
