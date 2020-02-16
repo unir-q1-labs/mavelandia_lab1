@@ -14,7 +14,7 @@
     <dmn:itemComponent id="_6587D229-E8D7-48A3-92C5-E17758B113CF" name="City" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
-    <dmn:itemComponent id="_C33C4B1F-98A7-40D6-BB95-0CE78FD3E3A0" name="Point" isCollection="false">
+    <dmn:itemComponent id="_C33C4B1F-98A7-40D6-BB95-0CE78FD3E3A0" name="Points" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
@@ -77,7 +77,7 @@
   </dmn:inputData>
   <dmn:inputData id="_623EEF78-A58F-4FB5-AC98-6C63C9C22EC5" name="Driver">
     <dmn:extensionElements/>
-    <dmn:variable id="_330B5D9B-6650-4DA9-A1A0-F545A80177C4" name="Driver" typeRef="tDriver"/>
+    <dmn:variable id="_330B5D9B-6650-4DA9-A1A0-F545A80177C4" name="Driver"/>
   </dmn:inputData>
   <dmn:decision id="_073381DC-9ADC-4EDD-8C4A-A6CE914EDB81" name="Fine">
     <dmn:extensionElements/>
