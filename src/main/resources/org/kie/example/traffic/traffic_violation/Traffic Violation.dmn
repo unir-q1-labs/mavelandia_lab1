@@ -38,7 +38,7 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:itemDefinition id="_CB3A0EDB-7C66-49BD-A4F4-5CA15D932A6F" name="tfine" isCollection="false">
+  <dmn:itemDefinition id="_CB3A0EDB-7C66-49BD-A4F4-5CA15D932A6F" name="tFine" isCollection="false">
     <dmn:itemComponent id="_EA73DBC8-C72D-4BB9-8BA1-EDDA65AE251A" name="Amount" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
@@ -81,7 +81,7 @@
   </dmn:inputData>
   <dmn:decision id="_073381DC-9ADC-4EDD-8C4A-A6CE914EDB81" name="Fine">
     <dmn:extensionElements/>
-    <dmn:variable id="_CFE74C30-6521-4B55-9E2C-19E81C1D787B" name="Fine"/>
+    <dmn:variable id="_CFE74C30-6521-4B55-9E2C-19E81C1D787B" name="Fine" typeRef="tFine"/>
     <dmn:informationRequirement id="_E7C62440-0D2A-4815-BE49-BA8B8FCF3B39">
       <dmn:requiredInput href="#_B56C8227-43B1-426A-ACE7-0C1050D2D8CE"/>
     </dmn:informationRequirement>
