@@ -72,27 +72,73 @@
     <dmn:informationRequirement id="_E7C62440-0D2A-4815-BE49-BA8B8FCF3B39">
       <dmn:requiredInput href="#_B56C8227-43B1-426A-ACE7-0C1050D2D8CE"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_52621329-B6D6-4F51-9CB4-AEE298D68CC0" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_FE5212E6-CCAE-4FC1-A9C9-6DB8AC876351">
-        <dmn:inputExpression id="_EDDD3D1A-0930-4D59-953A-025463A52895" typeRef="number">
-          <dmn:text>Violation.Points</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_10FA0C93-506C-4505-90C7-C08CCEB7C863">
-        <dmn:inputExpression id="_BCB65EDF-A87F-4FBD-9F0E-D01EF53F8C7D" typeRef="string">
+    <dmn:decisionTable id="_3E657A48-797A-4446-8754-0A8F0259CF1C" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_3BEDDCA0-6AB4-4206-83B6-B5AE175F690A">
+        <dmn:inputExpression id="_4D799833-CE67-4D16-8054-CFA168AE6ECC" typeRef="string">
           <dmn:text>Violation.Type</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_4124EF54-E994-4E2D-B65A-E6165C6A538E" typeRef="tfine"/>
-      <dmn:rule id="_45F5ECC0-9911-4018-9B37-8DA4323FB5D7">
-        <dmn:inputEntry id="_057F433F-9E2A-4A09-A99A-265A3678E044">
+      <dmn:input id="_FB726A36-FE15-45EA-BDC1-C41F1B8B4907">
+        <dmn:inputExpression id="_F84C599C-AF96-41A0-A256-E694DC9B59E9" typeRef="number">
+          <dmn:text>Violation.Actual Speed-Violation.Speed Limit</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_5F4B92ED-AED3-43E4-8FEE-24739AC23DD2" name="Amount" typeRef="number"/>
+      <dmn:output id="_D1366713-5DBE-44CF-9791-01C58D522557" name="Points" typeRef="number"/>
+      <dmn:rule id="_92EF7191-024A-455A-B3EB-B5E5B99B2209">
+        <dmn:inputEntry id="_F3210AC2-3B2F-427E-8456-F3E8BF3ED5DA">
+          <dmn:text>"Speed"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_970E3C5D-1B1D-4B51-B31A-866F52D91D1E">
+          <dmn:text>[10..30)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_BFDEB8F2-88CD-42BC-937B-9F6B53FA5C43">
+          <dmn:text>500</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_A0385A49-E3EF-48FD-A6A5-03D5B49E6A3A">
+          <dmn:text>3</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_7CD1531D-8131-4B20-9EF3-0DFF81DAFAB9">
+        <dmn:inputEntry id="_9C0CB0FF-FAD8-4F14-8148-DC6885376C67">
+          <dmn:text>"Speed"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_3A1C9C35-E205-4D7C-85B2-0439FEA37F2D">
+          <dmn:text>&gt;=30</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_CB997BF4-A253-4D8A-9307-968936F21F06">
+          <dmn:text>1000</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_F4C46B73-AA0B-4B1B-B3AF-1FE2F047FD87">
+          <dmn:text>7</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_93E5DB84-4754-41D9-9D7E-96ED41DCE3D1">
+        <dmn:inputEntry id="_BA83E3EE-4B60-4D43-B426-0A3E246313DE">
+          <dmn:text>"Parking"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_1EF73019-3933-4F62-BD60-8993F5AA2640">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_F2D86516-D482-497E-ABF3-1211BD8DB1A4">
+        <dmn:outputEntry id="_72DEB764-EC81-4681-893C-91E95182395F">
+          <dmn:text>100</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_293FE263-5485-42AF-90E5-861FE5B8B129">
+          <dmn:text>1</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_367A8BDD-FB85-48B7-9D56-D9CB1CE0A6BD">
+        <dmn:inputEntry id="_ECACD13B-8F32-48D8-94D4-F17E167D1699">
+          <dmn:text>"Driving Under the Influence"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_2C9A5C00-BC4C-4E96-B672-1EFA074ECE59">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_04F24B49-822F-4A62-9885-32AC9F9F3070">
-          <dmn:text></dmn:text>
+        <dmn:outputEntry id="_33EBC70D-F198-40D8-BA02-EB644D514A98">
+          <dmn:text>1000</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_771EF436-DD14-4E9D-B36E-BDD318D04FBA">
+          <dmn:text>5</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
@@ -101,12 +147,13 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_52621329-B6D6-4F51-9CB4-AEE298D68CC0">
+          <kie:ComponentWidths dmnElementRef="_3E657A48-797A-4446-8754-0A8F0259CF1C">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
+            <kie:width>285.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>100.0</kie:width>
+            <kie:width>226.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
