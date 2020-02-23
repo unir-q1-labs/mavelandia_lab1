@@ -192,7 +192,7 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>283.0</columnWidth>
+          <columnWidth>220.37125129265772</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
